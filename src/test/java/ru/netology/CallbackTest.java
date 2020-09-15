@@ -23,9 +23,9 @@ public class CallbackTest {
     @BeforeAll
     static void setUpAll() {
         if (System.getProperty("os.name").equals("Linux")){
-            System.setProperty("webdriver.chrome.driver", "./driver/linux/chromedriver");
+            System.setProperty("webdriver.chrome.driver", "/driver/linux/chromedriver");
         } else if (System.getProperty("os.name").contains("Windows")) {
-            System.setProperty("webdriver.chrome.driver", "./driver/windows/chromedriver.exe");
+            System.setProperty("webdriver.chrome.driver", "/driver/windows/chromedriver.exe");
         }
     }
 
