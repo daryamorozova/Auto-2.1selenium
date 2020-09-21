@@ -12,6 +12,7 @@ install:
   # запускаем SUT (& означает, что в фоновом режиме - не блокируем терминал для запуска тестов); права на запуск CI для Linux
   - java -jar ./artifacts/app-order.jar &
   - chmod +x gradlew
+  - chmod +x ./driver/linux/chromedriver
 
 build_script:
   - ./gradlew test --info "-Dselenide.headless=true"
